@@ -5,7 +5,7 @@ walks every course you're registered in, and downloads each posted file into the
 matching local course folder — named after **the title shown on the website**
 rather than the CMS's numeric-and-date filename.
 
-`Lecture 3.pdf`, not `1234_2024-10-07.pdf`.
+`Lecture 3.pdf`, not `GIU1234_2024-10-07.pdf`.
 
 Running it twice downloads nothing twice. Every file is recorded in
 `_cms_manifest.json` next to the script, and anything already on disk is skipped,
@@ -46,14 +46,8 @@ python cms_scraper.py --course INCS104
 ## Credentials
 
 On first run it asks for your CMS username, password and NTLM domain, then
-offers to save them to `cms_config.json` so it can stop asking. That file is
-gitignored and never leaves your machine — delete it to be asked again.
-
-Order of precedence, first match wins:
-
-1. `CMS_USERNAME` / `CMS_PASSWORD` / `CMS_DOMAIN` environment variables
-2. `cms_config.json`
-3. An interactive prompt
+offers to save them to `cms_config.json` so it can stop asking. That file never 
+leaves your machine — delete it to be asked again.
 
 If login fails with a 401, it's usually the NTLM domain rather than the
 password — delete `cms_config.json` and try `GIU`, `giu-uni.de`, or none.
