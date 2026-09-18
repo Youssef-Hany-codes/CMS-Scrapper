@@ -1,0 +1,4 @@
+cms_config.json
+_cms_manifest.json
+__pycache__/
+*.pyc
