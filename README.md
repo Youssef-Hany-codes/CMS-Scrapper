@@ -76,6 +76,13 @@ actually gone through it. The scraper already builds exactly this structure in
 `_cms_manifest.json`, so the work is the Notion API integration, not the
 bookkeeping. Not implemented yet.
 
+**A GUI.** A small window instead of the terminal: tick the courses you want,
+press Download, watch a progress bar, and see your saved login rather than
+typing it again. Everything the flags do now, without anyone needing to know
+what a flag is. Built with CustomTkinter — flat, rounded, dark-mode-aware
+widgets on top of the Tkinter that already ships with Python, so it stays one
+small pip install rather than a heavyweight toolkit. Not implemented yet.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
