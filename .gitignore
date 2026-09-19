@@ -1,4 +1,12 @@
+# Credentials: CMS login and Notion token. Never commit this.
 cms_config.json
+
+# Generated state - rebuilt by the scripts, personal to each user.
 _cms_manifest.json
+_checklist_data.json
+_notion_state.json
+Study Checklist.md
+_dump_*.html
+
 __pycache__/
 *.pyc
