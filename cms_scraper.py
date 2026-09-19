@@ -50,6 +50,8 @@ COURSE_FOLDERS = {
     "INCS102": "Operating Systems",
     "MATH304": "Maths 3",
     "INCS101": "Programming 3",
+    "CPS402": "Communication and Presentation Skills",
+    "DE303": "German 3",
 }
 
 # --------------------------------------------------------------------------
